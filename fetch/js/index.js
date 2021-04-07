@@ -6,7 +6,7 @@ elLoadUser.addEventListener("click",function(){
 function LoadUser(){
     let url = "https://randomuser.me/api/";
     fetch(url)
-    .then((response) => Response.json())
+    .then((response) => response.json())
     .then(data=> {
         let fn = document.getElementById("firstName");
         let ln = document.getElementById("lastName");
