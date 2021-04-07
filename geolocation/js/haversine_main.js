@@ -24,9 +24,9 @@ elLocate.addEventListener("click", function(){
 
             elLat.innrHTML = "Your latitude: " + userLat;
             elLong.innerHTML = "Your longitude: " + userLong;
-            elDePulze.innerHTML = "Distance to De Pulze, Cyberjaya is " + distnace[0] + "km";
-            elSunway.innerHTML = "Distance to Sunway Pyramid, Subang Jaya is " + distnace[1] + "km";
-            elKlcc.innerHTML = "Distance to KLCC, Ampang is " + distnace[2] + "km";
+            elDePulze.innerHTML = "Distance to De Pulze, Cyberjaya is " + distance[0] + "km";
+            elSunway.innerHTML = "Distance to Sunway Pyramid, Subang Jaya is " + distance[1] + "km";
+            elKlcc.innerHTML = "Distance to KLCC, Ampang is " + distance[2] + "km";
         });
     }else {
         alert("Geolocation is not supported bu this browser.")
