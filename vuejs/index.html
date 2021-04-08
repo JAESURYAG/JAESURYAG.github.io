@@ -19,7 +19,11 @@
     <a v-bind:href="linkUrl" target="_blank" rel="noopener noreferrer">
         {{  linkText  }}
     </a>
-</div>
+    </div>
+    <div id="app3">
+        <span v-if="showIt">Now you see this!</span>
+    </div>
+
     <script src="https://unpkg.com/vue"></script>
     <script src="js/index.js"></script>
 </body>
