@@ -24,6 +24,14 @@
         <span v-if="showIt">Now you see this!</span>
     </div>
 
+    <div id="app4">
+        <ol>
+            <li v-for="todo in theList">  
+                {{todo.text}}
+            </li>
+        </ol>
+    </div>
+
     <script src="https://unpkg.com/vue"></script>
     <script src="js/index.js"></script>
 </body>
