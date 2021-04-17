@@ -31,6 +31,6 @@ function BookNow(userName, userEmail, userPax, userRemarks){
     })
     .then((response) => response.json())
     .then(json => {
-      alert("ID:" + isSecureContext.bookingitem.id + " , " + json.bookingitem.name + " successfully added! ");
+      alert("ID:" + json.bookingitem.id + " , " + json.bookingitem.name + " successfully added! ");
     });
 }
