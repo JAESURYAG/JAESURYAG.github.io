@@ -24,7 +24,10 @@ function BookNow(userName, userEmail, userPax, userRemarks){
     }
     fetch(url, {
       method: 'POST',
-      body: JSON.stringify(body)
+      body: JSON.stringify(body),
+      headers: {
+          "Content-Type": "application/json"
+      }
     })
     .then((response) => response.json())
     .then(json => {
