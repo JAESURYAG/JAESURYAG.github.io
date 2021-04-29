@@ -17,7 +17,7 @@ bookNowBtn.addEventListener("click", function () {
 function BookNow(userName, userEmail, userCapacity, userEvent, userLocation, userRemarks) {
   let url = 'https://api.sheety.co/9fdfbce33b92088e0069f7f4326f6ee2/projectApp/bookingrooms';
   let body = {
-    bookingrooms: {
+    bookingroom: {
       name: userName,
       email: userEmail,
       capacity: userCapacity,
@@ -33,8 +33,8 @@ function BookNow(userName, userEmail, userCapacity, userEvent, userLocation, use
       "Content-Type": "application/json"
     }
   })
-    .then((response) => response.json())
-    .then(json => {
-      alert("ID:" + json.bookingrooms.id + " , " + json.bookingrooms.name + " successfully added! ");
+  .then((response) => response.json())
+  .then(json => {
+      alert("ID:" + json.bookingroom.id + " , " + json.bookingroom.name + " successfully added! ");
     });
 }
