@@ -35,7 +35,7 @@ function BookNow(userName, userEmail, userCapacity, userEvent, userLocation, use
   })
     .then((response) => response.json())
     .then(json => {
-      alert("ID:" + json.bookingroom.id + " , " + json.bookingroom.name + " successfully added! ");
+      alert("ID:" + json.bookingrooms.id + " , " + json.bookingrooms.name + " successfully added! ");
     });
 }
 
