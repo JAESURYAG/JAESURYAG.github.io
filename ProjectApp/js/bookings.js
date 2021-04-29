@@ -22,7 +22,7 @@ function BookNow(userName, userEmail, userCapacity, userEvent, userLocation, use
       email: userEmail,
       capacity: userCapacity,
       event: userEvent,
-      location: userLocation, 
+      location: userLocation,
       remarks: userRemarks
     }
   }
@@ -33,8 +33,8 @@ function BookNow(userName, userEmail, userCapacity, userEvent, userLocation, use
       "Content-Type": "application/json"
     }
   })
-  .then((response) => response.json())
-  .then(json => {
+    .then((response) => response.json())
+    .then(json => {
       alert("ID:" + json.bookingroom.id + " , " + json.bookingroom.name + " successfully added! ");
     });
 }

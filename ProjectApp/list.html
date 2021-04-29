@@ -1,155 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ballroom Booking App - Listing Page</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ballroom Booking App - Listing Page</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 
-<style>
-  body {
-  width: 100%;
-  height: 100%;
-  background: url(https://64.media.tumblr.com/2541216cdf5738dd5b0c32a0b6737c4f/tumblr_opno5nZGCT1vsjcxvo1_r1_540.gifv) center center repeat;
-  background-size:auto;
-  margin: 30px auto;
-  border-radius: 3px;
-  font-family: sans-serif;
-}
-/* width */
-::-webkit-scrollbar {
-  width: 20px;
-}
+  <style>
+    body {
+      width: 100%;
+      height: 100%;
+      background: url(https://64.media.tumblr.com/2541216cdf5738dd5b0c32a0b6737c4f/tumblr_opno5nZGCT1vsjcxvo1_r1_540.gifv) center center repeat;
+      background-size: auto;
+      margin: 30px auto;
+      border-radius: 3px;
+      font-family: sans-serif;
+    }
 
-/* Handle */
-::-webkit-scrollbar-thumb {   
-  border-radius: 10px;
-  background:-webkit-gradient(linear,left top,left bottom,from(#af0ca7),to(#42033d));
-  box-shadow: inset 2px 2px 2px rgba(255,255,255,.25), inset -2px -2px 2px rgba(0,0,0,.25);
-  }
- 
- /* Track */
-::-webkit-scrollbar-track {     
-  background-color: #fff;
-  background: linear-gradient(to right,#201c29,#201c29 1px,#100e17 1px,#100e17);
-}
+    /* width */
+    ::-webkit-scrollbar {
+      width: 20px;
+    }
 
-.nav-bk{
-background: #070000;  
-background: -webkit-linear-gradient(to right, #0c0249, #42033d, #0c0249);  
-background: linear-gradient(to right, #0c0249, #42033d, #0c0249); 
-font-size:25px;
-}
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+      border-radius: 10px;
+      background: -webkit-gradient(linear, left top, left bottom, from(#af0ca7), to(#42033d));
+      box-shadow: inset 2px 2px 2px rgba(255, 255, 255, .25), inset -2px -2px 2px rgba(0, 0, 0, .25);
+    }
 
- /* Button */
-.buttonapp{
-  display:inline-block;
-  width: 200px;
-  max-width: 100%;
-  margin: 0 auto;
-  margin-bottom: 0;
-  overflow: hidden;
-  position: relative;
-  transform: translatez(0);
-  text-decoration: none;
-  background:linear-gradient(199deg, rgba(63,251,198,1) 0%, rgba(219,70,252,0.9444152661064426) 100%);
-  box-sizing: border-box;
-  font-size: 20px;
-  border-radius:15px ;
-  font-weight: normal;
-  box-shadow: 0 9px 18px rgba(0,0,0,0.2);
-}
+    /* Track */
+    ::-webkit-scrollbar-track {
+      background-color: #fff;
+      background: linear-gradient(to right, #201c29, #201c29 1px, #100e17 1px, #100e17);
+    }
 
-.buttonapp:hover {
-  background: #03e9f4;
-  color: #0b2073;
-  font-weight: bold;
-  border-radius: 15px;
-  box-shadow: 0 0 5px #DF00FF,
-              0 0 25px #DF00FF,
-              0 0 50px #DF00FF,
-              0 0 100px #DF00FF;
-}
+    .nav-bk {
+      background: #070000;
+      background: -webkit-linear-gradient(to right, #0c0249, #42033d, #0c0249);
+      background: linear-gradient(to right, #0c0249, #42033d, #0c0249);
+      font-size: 25px;
+    }
 
-th, td{
-color:#fff;
-font-size:25px;
-font-weight: bolder;
-}
+    /* Button */
+    .buttonapp {
+      display: inline-block;
+      width: 200px;
+      max-width: 100%;
+      margin: 0 auto;
+      margin-bottom: 0;
+      overflow: hidden;
+      position: relative;
+      transform: translatez(0);
+      text-decoration: none;
+      background: linear-gradient(199deg, rgba(63, 251, 198, 1) 0%, rgba(219, 70, 252, 0.9444152661064426) 100%);
+      box-sizing: border-box;
+      font-size: 20px;
+      border-radius: 15px;
+      font-weight: normal;
+      box-shadow: 0 9px 18px rgba(0, 0, 0, 0.2);
+    }
 
-</style>
+    .buttonapp:hover {
+      background: #03e9f4;
+      color: #0b2073;
+      font-weight: bold;
+      border-radius: 15px;
+      box-shadow: 0 0 5px #DF00FF,
+        0 0 25px #DF00FF,
+        0 0 50px #DF00FF,
+        0 0 100px #DF00FF;
+    }
 
-  </head>
+    th,
+    td {
+      color: #fff;
+      font-size: 25px;
+      font-weight: bolder;
+    }
+  </style>
+
+</head>
+
 <body>
-    <div class="container-fluid">
-        <!--NavBar -->
-        <div class="row">
-            <div class="col">
-                <nav class="navbar navbar-expand-lg navbar-dark bg-dark nav-bk">
-                    <a class="navbar-brand" href="index.html">Ballroom Booking App</a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                      <span class="navbar-toggler-icon"></span>
-                    </button>
-                  
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                      <ul class="navbar-nav mr-auto">
-                        <li class="nav-item">
-                          <a class="nav-link" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="bookings.html">Book Ballroom</a>
-                        </li>
-                        <li class="nav-item active">
-                          <a class="nav-link" href="list.html">View Bookings</a>
-                          </li>
-                      </ul>
-                    </div>
-                  </nav>
-            </div>
+  <div class="container-fluid">
+    <!--NavBar -->
+    <div class="row">
+      <div class="col">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark nav-bk">
+          <a class="navbar-brand" href="index.html">Ballroom Booking App</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="bookings.html">Book Ballroom</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="list.html">View Bookings</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    <!--Jumbotron-->
+    <div class="row">
+      <div class="col">
+        <div class="jumbotron">
+          <h1 class="display-4">Let Us Design Your Wedding or Event</h1>
+          <p class="lead">
+            We supply gold chiavari chairs, Staging, Backdrops, Mendap designs, centrepieces and more. Discover with us
+            today?
+          </p>
         </div>
+      </div>
+    </div>
 
-        <!--Jumbotron-->
-        <div class="row">
-            <div class="col">
-                <div class="jumbotron">
-                    <h1 class="display-4">Let Us Design Your Wedding or Event</h1>
-                    <p class="lead">
-                      We supply gold chiavari chairs, Staging, Backdrops, Mendap designs, centrepieces and more. Discover with us today?
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <!--Booking List-->
-        <div class="row">
-            <div class="col">
-                <button type="button" class="btn btn-primary buttonapp" id="refreshNow">Refresh Now</button>
-                <table class="table table-striped" id="bookingNameList">
-                    <thead>
-                      <tr>
-                        <th scope="col">Id</th>
-                        <th scope="col">Name</th>
-                        <th scope="col">Email</th>
-                        <th scope="col">Capacity</th>
-                        <th scope="col">Event</th>
-                        <th scope="col">Location</th>
-                        <th scope="col">Remarks</th>
-                        <th scope="col">Task</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    </tbody>
-                  </table>
-            </div>
-        </div>
-
-
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>    
-        <script src="js/list.js"></script>
+    <!--Booking List-->
+    <div class="row">
+      <div class="col">
+        <button type="button" class="btn btn-primary buttonapp" id="refreshNow">Refresh Now</button>
+        <table class="table table-striped" id="bookingNameList">
+          <thead>
+            <tr>
+              <th scope="col">Id</th>
+              <th scope="col">Name</th>
+              <th scope="col">Email</th>
+              <th scope="col">Capacity</th>
+              <th scope="col">Event</th>
+              <th scope="col">Location</th>
+              <th scope="col">Remarks</th>
+              <th scope="col">Task</th>
+            </tr>
+          </thead>
+          <tbody>
+          </tbody>
+        </table>
+      </div>
     </div>
 
 
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+      crossorigin="anonymous"></script>
+    <script src="js/list.js"></script>
+  </div>
+
+
 </body>
+
 </html>

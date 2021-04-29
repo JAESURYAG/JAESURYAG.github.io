@@ -1,205 +1,231 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Ballroom Booking App</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Ballroom Booking App</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 
-<style>
-body {
-  width: 100%;
-  height: 100%;
-  background: url(https://64.media.tumblr.com/2541216cdf5738dd5b0c32a0b6737c4f/tumblr_opno5nZGCT1vsjcxvo1_r1_540.gifv) center center repeat;
-  background-size:auto;
-  margin: 30px auto;
-  border-radius: 3px;
-  font-family: sans-serif;
-}
+  <style>
+    body {
+      width: 100%;
+      height: 100%;
+      background: url(https://64.media.tumblr.com/2541216cdf5738dd5b0c32a0b6737c4f/tumblr_opno5nZGCT1vsjcxvo1_r1_540.gifv) center center repeat;
+      background-size: auto;
+      margin: 30px auto;
+      border-radius: 3px;
+      font-family: sans-serif;
+    }
 
-/* width */
-::-webkit-scrollbar {
-  width: 20px;
-}
+    /* Width Scrollbar*/
+    ::-webkit-scrollbar {
+      width: 20px;
+    }
 
-/* Handle */
-::-webkit-scrollbar-thumb {   
-  border-radius: 10px;
-  background:-webkit-gradient(linear,left top,left bottom,from(#af0ca7),to(#42033d));
-  box-shadow: inset 2px 2px 2px rgba(255,255,255,.25), inset -2px -2px 2px rgba(0,0,0,.25);
-  }
- 
- /* Track */
-::-webkit-scrollbar-track {     
-  background-color: #fff;
-  background: linear-gradient(to right,#201c29,#201c29 1px,#100e17 1px,#100e17);
-}
+    /* Handle Scrollbar */
+    ::-webkit-scrollbar-thumb {
+      border-radius: 10px;
+      background: -webkit-gradient(linear, left top, left bottom, from(#af0ca7), to(#42033d));
+      box-shadow: inset 2px 2px 2px rgba(255, 255, 255, .25), inset -2px -2px 2px rgba(0, 0, 0, .25);
+    }
 
-.nav-bk{
-background: #070000;  
-background: -webkit-linear-gradient(to right, #0c0249, #42033d, #0c0249);  
-background: linear-gradient(to right, #0c0249, #42033d, #0c0249); 
-font-size:25px;
-}
+    /* Track Scrollbar*/
+    ::-webkit-scrollbar-track {
+      background-color: #fff;
+      background: linear-gradient(to right, #201c29, #201c29 1px, #100e17 1px, #100e17);
+    }
 
-.carousel-item{
- margin: 30px;
-  background-color: #ffffff;
-  border: 1px solid black;
-  opacity: 0.7;
-}
-.carousel-item:hover {
-  opacity: 1.0;
-}
+    /* Navbar*/
+    .nav-bk {
+      background: #070000;
+      background: -webkit-linear-gradient(to right, #0c0249, #42033d, #0c0249);
+      background: linear-gradient(to right, #0c0249, #42033d, #0c0249);
+      font-size: 25px;
+    }
 
-.stretched-link-main{
- margin: 30px;
-  background-color: #CCC;
-  border: 1px solid black;
-  opacity: 0.7;
-}
-.stretched-link-main:hover {
-  opacity: 1.0;
-}
+    /* Carousel*/
+    .carousel-item {
+      margin: 30px;
+      background-color: #ffffff;
+      border: 1px solid black;
+      opacity: 0.7;
+    }
 
-.buttonapp2{
-  background:linear-gradient(199deg, rgba(63,251,198,1) 0%, rgba(219,70,252,0.9444152661064426) 100%);
-  box-shadow: 0 9px 18px rgba(0,0,0,0.2);
-}
+    .carousel-item:hover {
+      opacity: 1.0;
+    }
 
-.buttonapp2:hover {
-  background: #03e9f4;
-  color: #0b2073;
-  font-weight: bold;
-  box-shadow: 0 0 5px #DF00FF,
-              0 0 25px #DF00FF,
-              0 0 50px #DF00FF,
-              0 0 100px #DF00FF;
-}
-</style>
+    /* Streched Link*/
+    .stretched-link-main {
+      margin: 30px;
+      background-color: #CCC;
+      border: 1px solid black;
+      opacity: 0.7;
+    }
+
+    .stretched-link-main:hover {
+      opacity: 1.0;
+    }
+
+    /*Button*/
+    .buttonapp2 {
+      background: linear-gradient(199deg, rgba(63, 251, 198, 1) 0%, rgba(219, 70, 252, 0.9444152661064426) 100%);
+      box-shadow: 0 9px 18px rgba(0, 0, 0, 0.2);
+    }
+
+    .buttonapp2:hover {
+      background: #03e9f4;
+      color: #0b2073;
+      font-weight: bold;
+      box-shadow: 0 0 5px #DF00FF,
+        0 0 25px #DF00FF,
+        0 0 50px #DF00FF,
+        0 0 100px #DF00FF;
+    }
+  </style>
 
 </head>
+
 <body>
-    <div class="container-fluid">
-        <!--NavBar -->
-        <div class="row">
-            <div class="col">
-                <nav class="navbar navbar-expand-lg navbar-dark bg-dark nav-bk">
-                    <a class="navbar-brand" href="index.html">Ballroom Booking App</a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                      <span class="navbar-toggler-icon"></span>
-                    </button>
-                  
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                      <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">
-                          <a class="nav-link" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="bookings.html">Book Ballroom</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="list.html">View Bookings</a>
-                        </li>
-                     </ul>
-                     </div>
-                  </nav>
-            </div>
-        </div>
-       <!--End of NavBar-->
+  <div class="container-fluid">
+
+    <!--NavBar -->
+    <div class="row">
+      <div class="col">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark nav-bk">
+          <a class="navbar-brand" href="index.html">Ballroom Booking App</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="bookings.html">Book Ballroom</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="list.html">View Bookings</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <!--End of NavBar-->
 
 
-       <!--Carousel-->
-       <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-          <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-           <img src="https://s28830.pcdn.co/wp-content/uploads/2013/11/wedding-reception-ideas-13-111913.jpg" class="d-block mx-auto" width="1500px" height="500px" alt="ballroom1">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>CONCORDE HOTEL</h5>
-              <p>The ambient light colors can be customized to your theme.</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-           <img src="https://singaporebrides.com/articles/wp-content/uploads/2018/04/Floating-Glass-Sculpture-in-Grand-Ballroom.jpg" class="d-block mx-auto" width="1500px" height="500px" alt="ballroom2">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>CORUS HOTEL</h5>
-              <p>Oval shape ballroom with glittery ceiling light.</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-           <img src="http://2.bp.blogspot.com/-kRWXS05tyoQ/T34PbaLtDGI/AAAAAAAABYI/MgLmmRlpp6o/s640/Wedding+Reception+Lighting.jpg" class="d-block mx-auto" width="1500px" height="500px" alt="ballroom3">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>HOTEL ISTANA</h5>
-              <p>Ballroom after renovation in 2015</p>
-            </div>
+    <!--Carousel-->
+    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://s28830.pcdn.co/wp-content/uploads/2013/11/wedding-reception-ideas-13-111913.jpg"
+            class="d-block mx-auto" width="1500px" height="500px" alt="ballroom1">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>CONCORDE HOTEL</h5>
+            <p>The ambient light colors can be customized to your theme.</p>
           </div>
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
+        <div class="carousel-item">
+          <img
+            src="https://singaporebrides.com/articles/wp-content/uploads/2018/04/Floating-Glass-Sculpture-in-Grand-Ballroom.jpg"
+            class="d-block mx-auto" width="1500px" height="500px" alt="ballroom2">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>CORUS HOTEL</h5>
+            <p>Oval shape ballroom with glittery ceiling light.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="http://2.bp.blogspot.com/-kRWXS05tyoQ/T34PbaLtDGI/AAAAAAAABYI/MgLmmRlpp6o/s640/Wedding+Reception+Lighting.jpg"
+            class="d-block mx-auto" width="1500px" height="500px" alt="ballroom3">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>HOTEL ISTANA</h5>
+            <p>Ballroom after renovation in 2015</p>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
+    <!--End Carousel-->
+    
+    <br>
+
+    <!--Jumbotron-->
+    <div class="row">
+      <div class="col">
+        <div class="jumbotron">
+          <h1 class="display-4">Begin arranging your meeting or celebration right here.</h1>
+          <p class="lead">
+            Notify us about your party, and we'll get back to you and plan it together!
+          </p>
+          <hr class="my-4">
+          <a class="btn btn-info btn-lg btn-block buttonapp2" href="bookings.html" role="button">Get started here!</a>
+        </div>
+      </div>
+    </div>
+    <!--End of Jumbotron-->
+
+    <!--Stretched link-->
+    <div class="stretched-link-main">
+      <div class="row no-gutters bg-light position-relative">
+        <div class="col-md-6 mb-md-0 p-md-4">
+          <img
+            src="https://cache.marriott.com/marriottassets/marriott/KULAL/kulal-grand-ballroom-3104-hor-feat.jpg?downsize=1024px:*"
+            class=" mx-auto shadow-lg p-3 mb-5 bg-black rounded w-100" alt="Ballroom">
+        </div>
+        <div class="col-md-6 position-static p-4 pl-md-0">
+          <h5 class="mt-0">DoubleTree by Hilton Hotel</h5>
+          <p>Special ambiance lighting effects for performance, grand entrance, food presentation, dining for an
+            intimate wedding. No pillars in the ballroom obstructing views. Not very big (450 pax).</p>
+        </div>
       </div>
 
-          <!--End Carousel-->
-<br>
-
-        <!--Jumbotron-->
-        <div class="row">
-          <div class="col">
-            <div class="jumbotron">
-              <h1 class="display-4">Begin arranging your meeting or celebration right here.</h1>
-                <p class="lead">
-                        Notify us about your party, and we'll get back to you and plan it together!
-                </p>
-              <hr class="my-4">
-                      <a class="btn btn-info btn-lg btn-block buttonapp2" href="bookings.html" role="button">Get started here!</a>
-            </div>
-          </div>
+      <div class="row no-gutters bg-light position-relative">
+        <div class="col-md-6 position-static p-4 pl-md-0">
+          <h5 class="mt-0">Royal Lake Club</h5>
+          <p>The beautiful ballroom is modern and cozy, complete with hand-blown crystal chandeliers, intriguing
+            lighting.</p>
+          <a href="bookings.html" class="stretched-link">Book Now</a>
         </div>
-       <!--End of Jumbotron-->
-
-          <!--Stretched link-->
-        <div class="stretched-link-main">
-          <div class="row no-gutters bg-light position-relative">
-            <div class="col-md-6 mb-md-0 p-md-4">
-              <img src="https://cache.marriott.com/marriottassets/marriott/KULAL/kulal-grand-ballroom-3104-hor-feat.jpg?downsize=1024px:*" class=" mx-auto shadow-lg p-3 mb-5 bg-black rounded w-100" alt="Ballroom">
-            </div>
-            <div class="col-md-6 position-static p-4 pl-md-0">
-              <h5 class="mt-0">DoubleTree by Hilton Hotel</h5>
-              <p>Special ambiance lighting effects for performance, grand entrance, food presentation, dining for an intimate wedding. No pillars in the ballroom obstructing views. Not very big (450 pax).</p>
-              <a href="#" class="stretched-link">Go somewhere</a>
-            </div>
-          </div>
-        
-            <div class="row no-gutters bg-light position-relative">
-              <div class="col-md-6 position-static p-4 pl-md-0">
-                <h5 class="mt-0">Royal Lake Club</h5>
-                <p>The beautiful ballroom is modern and cozy, complete with hand-blown crystal chandeliers, intriguing lighting.</p>
-                <a href="#" class="stretched-link">Go somewhere</a>
-              </div>
-              <div class="col-md-6 mb-md-0 p-md-4">
-              <img src="https://i.pinimg.com/originals/39/1c/da/391cda90c3dd792d025b6e8366247460.jpg" class=" mx-auto shadow-lg p-3 mb-5 bg-black rounded w-100" alt="Ballroom">
-              </div>
-            </div>
+        <div class="col-md-6 mb-md-0 p-md-4">
+          <img src="https://i.pinimg.com/originals/39/1c/da/391cda90c3dd792d025b6e8366247460.jpg"
+            class=" mx-auto shadow-lg p-3 mb-5 bg-black rounded w-100" alt="Ballroom">
         </div>
-          <!--End of Stretched link-->
-
-
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>    
-        <script src="js/index.js"></script>
+      </div>
     </div>
+    <!--End of Stretched link-->
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+      crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
+  </div>
 
 
 </body>
+
 </html>
