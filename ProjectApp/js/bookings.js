@@ -38,4 +38,3 @@ function BookNow(userName, userEmail, userCapacity, userEvent, userLocation, use
       alert("ID:" + json.bookingrooms.id + " , " + json.bookingrooms.name + " successfully added! ");
     });
 }
-
