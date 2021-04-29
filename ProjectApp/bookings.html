@@ -41,6 +41,33 @@ background: -webkit-linear-gradient(to right, #0c0249, #42033d, #0c0249);
 background: linear-gradient(to right, #0c0249, #42033d, #0c0249); 
 }
 
+.buttonapp{
+  display:inline-block;
+  width: 200px;
+  max-width: 100%;
+  margin: 0 auto;
+  margin-bottom: 0;
+  overflow: hidden;
+  position: relative;
+  transform: translatez(0);
+  text-decoration: none;
+  background:linear-gradient(199deg, rgba(63,251,198,1) 0%, rgba(219,70,252,0.9444152661064426) 100%);
+  box-sizing: border-box;
+  font-size: 20px;
+  border-radius:3px ;
+  font-weight: normal;
+  box-shadow: 0 9px 18px rgba(0,0,0,0.2);
+}
+
+.buttonapp:hover {
+  background: #03e9f4;
+  color: #000000;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #03e9f4,
+              0 0 25px #03e9f4,
+              0 0 50px #03e9f4,
+              0 0 100px #03e9f4;
+}
 </style>
 
   </head>
@@ -110,7 +137,7 @@ background: linear-gradient(to right, #0c0249, #42033d, #0c0249);
                       <label for="userRemarks">Remarks</label>
                       <textarea class="form-control" id="userRemarks" rows="3"></textarea>
                     </div>
-                    <button type="button" class="btn btn-primary" id="bookNow">Book Now</button>
+                    <button type="button" class="btn btn-primary buttonapp" id="bookNow">Book Now</button>
             </div>
         </div>
 
